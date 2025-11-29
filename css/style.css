@@ -1,0 +1,421 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-box {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.tagline {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #4a5568;
+}
+
+/* Intro Section */
+.intro {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2d3748;
+    text-align: center;
+}
+
+.highlight {
+    color: #667eea;
+    position: relative;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+
+
+/* Case Study Sections */
+.case-study {
+    padding: 40px 0;
+}
+
+.girl-case {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 60px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Comparison Row */
+.comparison-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.comparison-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+    position: relative;
+}
+
+.comparison-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.label {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95em;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.before-label {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.after-label {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background: #f7fafc;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.arrow {
+    font-size: 5em;
+    color: #667eea;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Testimonial Box */
+.testimonial-box {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 60px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-box h4 {
+    font-size: 1.8em;
+    color: #2d3748;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.message-image {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.message-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+}
+
+.testimonial-intro {
+    text-align: center;
+    font-size: 1.2em;
+    color: #4a5568;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.email-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.email-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.email-card:hover {
+    transform: translateY(-5px);
+}
+
+.email-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Contact Section */
+.contact {
+    background: white;
+    padding: 80px 0;
+    margin: 60px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box {
+    background: white;
+    padding: 50px 80px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.contact .container {
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 2.5em;
+    color: #2d3748;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.4em;
+    color: #4a5568;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.contact-info strong {
+    color: #667eea;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 0.95em;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .comparison-row {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+    .comparison-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .email-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .intro h2 {
+        font-size: 1.8em;
+    }
+
+    .section-header h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 40px 0;
+    }
+
+    .header-box {
+        padding: 25px 30px;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .intro {
+        padding: 40px 0 20px;
+    }
+
+    .intro h2 {
+        font-size: 1.8em;
+    }
+
+    .section-header h3 {
+        font-size: 1.8em;
+    }
+
+    .case-study {
+        padding: 20px 0;
+    }
+
+    .girl-case {
+        padding: 40px 0;
+    }
+
+    .comparison-card {
+        padding: 15px;
+    }
+
+    .image-wrapper {
+        height: 300px;
+    }
+
+    .label {
+        top: 20px;
+        left: 20px;
+        padding: 6px 15px;
+        font-size: 0.85em;
+    }
+
+    .arrow {
+        font-size: 3em;
+    }
+
+    .testimonial-box {
+        padding: 25px;
+    }
+
+    .testimonial-box h4 {
+        font-size: 1.3em;
+    }
+
+    .contact {
+        padding: 50px 0;
+    }
+
+    .contact-box {
+        padding: 30px 25px;
+    }
+
+    .contact h3 {
+        font-size: 1.8em;
+    }
+
+    .contact-info p {
+        font-size: 1.1em;
+    }
+}
